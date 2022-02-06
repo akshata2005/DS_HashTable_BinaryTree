@@ -23,7 +23,9 @@ namespace HashTables
                 hash.Add(key, word);
                 key++;
             }
-            Console.WriteLine("Frequency :" + hash.GetFrequency("paranoid"));
+            Console.WriteLine("Frequency :" + hash.GetFrequency("avoidable"));
+            hash.RemoveValue("avoidable");
+            Console.WriteLine("Frequency :" + hash.GetFrequency("avoidable"));
 
         }
     }

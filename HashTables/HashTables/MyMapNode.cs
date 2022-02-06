@@ -131,6 +131,28 @@ namespace HashTables
             }
             return frequency;
         }
+        /// <summary>
+        /// Removes the given value.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        public void RemoveValue(V value)
+        {
+            foreach (LinkedList<keyValue<K, V>> list in items)
+            {
+                if (list == null)
+                    continue;
+                foreach (keyValue<K, V> obj in list)
+                {
+                    if (obj.Equals(null))
+                        continue;
+                    if (obj.value.Equals(value))
+                    {
+                        Remove(obj.key);
+                        break;
+                    }
+                }
+            }
+        }
     }
 
 }
