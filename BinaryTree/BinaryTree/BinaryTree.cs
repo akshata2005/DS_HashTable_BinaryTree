@@ -62,6 +62,7 @@ namespace BinaryTree
         {
             Console.WriteLine("Size of binary search tree is " + " " + (1 + this.leftCount + this.rightCount));
         }
+        //Searching a node in Binary search tree.
         public bool IfExists(T element, BinaryTree<T> node)
         {
             if (node == null)
@@ -89,3 +90,6 @@ namespace BinaryTree
         }
     }
 }
+
+        
+

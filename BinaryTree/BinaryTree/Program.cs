@@ -29,6 +29,10 @@ namespace BinaryTree
             binarySearchTree.Display();
             //Getting the size of Binary search tree
             binarySearchTree.GetSize();
+            //Searching a node in binary search tree.
+            bool result = binarySearchTree.IfExists(63, binarySearchTree);
+            Console.WriteLine(result);
+
         }
     }
 }
